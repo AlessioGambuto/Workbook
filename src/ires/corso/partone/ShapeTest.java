@@ -15,7 +15,6 @@ public class ShapeTest {
 
         switch(shape){
             case "quadrato":
-                in = new Scanner(System.in);
                 System.out.println("Inserisci la misura del lato del quadrato:");
                 double l = in.nextDouble();
                 area = Quadrato.computeArea(l);
@@ -32,7 +31,6 @@ public class ShapeTest {
                 break;
 
             case "trapezio":
-                in = new Scanner(System.in);
                 System.out.println("Inserisci la misura della base minore del trapezio:");
                 double bmin = in.nextDouble();
                 System.out.println("Inserisci la misura della base maggiore del trapezio:");
