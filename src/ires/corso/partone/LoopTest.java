@@ -12,10 +12,10 @@ public class LoopTest {
         int n = in.nextInt();
         int i, j;
         int cont = 1;
-        for (i=0; i<=n; i++){
-            for (j=0; j<i; j++){
-                System.out.print(cont+ " ");
-                cont= cont+1;
+        for (i=0; i<n; i++){
+            for (j=0; j<=i; j++){
+                System.out.print(cont + " ");
+                cont = cont+1;
             }
             System.out.println("");
         }
