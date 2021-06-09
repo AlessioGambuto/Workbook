@@ -41,8 +41,8 @@ public class ArrayTest {
     }
     public static int[] removeDuplicates(int[] arrayWithDuplicates) {
         boolean[] isduplicated = new boolean[arrayWithDuplicates.length];
-        int nd = 1;
-        int cont = 0;
+        int nd = 0;
+
         for (int i = arrayWithDuplicates.length - 1; i >= 0; i--) {
             for (int j = i - 1; j >= 0; j--) {
                 if (arrayWithDuplicates[i] == arrayWithDuplicates[j]) {
@@ -52,14 +52,14 @@ public class ArrayTest {
                     isduplicated[i] = false;
             }
         }
-        for (int k = 0; k < isduplicated.length - 1; k++){
+        for (int k = 0; k < isduplicated.length; k++){
             if (!isduplicated[k]) {
                 nd++;
             }
         }
-        int [] arrayWithoutDuplicates = new int[nd];
-
-        for (int k=0; k<arrayWithDuplicates.length-1; k++){
+        int [] arrayWithoutDuplicates = new int[nd+1];
+        int cont = 0;
+        for (int k=0; k<arrayWithDuplicates.length; k++){
             if (!isduplicated[k]){
                 arrayWithoutDuplicates[cont]=arrayWithDuplicates[k];
                 cont++;
