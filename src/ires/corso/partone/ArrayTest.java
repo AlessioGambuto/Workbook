@@ -19,21 +19,17 @@ public class ArrayTest {
 
         System.out.print("Dimmi l'elemento da cercare: ");
         int j = in.nextInt();
-        elemPositionInArray(intArr, j);
+        int p = elemPositionInArray(intArr, j);
     }
 
-    public static void elemPositionInArray(int[] intArray, int elem) {
-        boolean trovato = false;
+    public static int elemPositionInArray(int[] intArray, int elem) {
+        int thereIs = -1;
         for (int i=0; i<intArray.length; i++){
             if (intArray[i]==elem){
-                trovato = true;
-                int position = i+1;
-                System.out.println("L'elemento si trova alla posizione dell'array n° " + position);
+                thereIs = i;
                 break;
             }
         }
-        if (!trovato){
-            System.out.println("Non ho trovato l'elemento inserito nell'array");
-        }
+        return thereIs;
     }
 }
