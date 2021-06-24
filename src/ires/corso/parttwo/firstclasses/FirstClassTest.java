@@ -1,5 +1,7 @@
 package ires.corso.parttwo.firstclasses;
 
+import ires.corso.parttwo.firstclasses.firstclasses.*;
+
 public class FirstClassTest {
     // Create 2 classi a vostro piacimento, ispirandovi agli oggetti che + vi piacciono.
     //

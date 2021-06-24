@@ -1,4 +1,4 @@
-package ires.corso.parttwo.firstclasses;
+package ires.corso.parttwo.firstclasses.firstclasses;
 
 public class Caffe {
     private String specie;
